@@ -1,0 +1,116 @@
+
+@font-face {
+    font-family: "Cerebri Sans Book";
+    src: url(./assets/fonts/Cerebri\ Sans\ Book.ttf);
+}
+
+@font-face {
+    font-family: "FreightTextProMedium" !important;
+    src: url(./assets/fonts/FreightTextProMedium-Regular.ttf);
+}
+
+.ff-FreightTextProMedium{
+    font-family: "FreightTextProMedium" !important;
+}
+
+.hv-100{
+    height: 100vh !important;
+}
+
+.card{
+    border: none !important;
+    border-radius: 2px !important;
+    position: relative !important;
+    transition: 500ms ease-in;
+}
+
+.bg-1{
+    background-color: #f2f2f2 !important;
+}
+
+.bg-2{
+    background-color: #e4e9ea !important;
+}
+
+.bg-3{
+    background-color: #e8eadf !important;
+}
+
+.card-label{
+    position: absolute !important;
+    top: -32px;
+    right: 24px;
+    background-color: #445e89;
+    min-width: 105px;
+    max-width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    bottom: auto;
+    left: auto;
+}
+
+.card-label span{
+    font-family: "Cerebri Sans Book" !important;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1px;
+    font-size: .9rem;
+}
+
+.card-label::before{
+    content: "";
+    background-image: url(./assets/images/left-round.svg);
+    height: 32px;
+    width: 24px;
+    position: absolute;
+    left: -22px;
+}
+
+.card-label::after{
+    content: "";
+    background-image: url(./assets/images/right-round.svg);
+    height: 32px;
+    width: 24px;
+    position: absolute;
+    right: -22px;
+    background-repeat: no-repeat;
+}
+
+.card-header h3{
+    font-family: "Kalam" !important;
+    margin-bottom: 0px;
+    line-height: 3rem;
+}
+
+.card-header{
+    background-image: url(./assets/images/line.png), url(./assets/images/line.png);
+    background-position: left 51px, left 94px;
+    background-repeat: repeat-x;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-img::before{
+    content: "";
+    background-image: url(./assets/images/sticker.png);
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-body{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 40px 30px 0 rgba(44, 44, 44, .3);
+}
